@@ -6,7 +6,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, breadcrumb }: PageHeroProps) {
   return (
-    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-[#10243A]">
+    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-black">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#DC2626]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#DC2626]/5 rounded-full translate-y-1/2 -translate-x-1/2" />

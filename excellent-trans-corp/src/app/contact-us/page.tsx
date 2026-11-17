@@ -94,7 +94,7 @@ export default function ContactPage() {
               </div>
 
               {/* Business Hours */}
-              <div className="mt-6 p-4 bg-[#10243A] rounded-xl">
+              <div className="mt-6 p-4 bg-black rounded-xl">
                 <div className="flex items-center gap-2 mb-3">
                   <Clock className="w-4 h-4 text-[#DC2626]" />
                   <span className="text-white font-semibold text-sm">Business Hours</span>

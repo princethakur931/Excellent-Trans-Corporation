@@ -62,7 +62,7 @@ export default function ProcessPage() {
               >
                 {/* Step number + icon */}
                 <div className="flex flex-col items-center gap-2 flex-shrink-0">
-                  <div className="w-14 h-14 rounded-full bg-[#10243A] flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full bg-black flex items-center justify-center">
                     <DynamicIcon name={step.icon} className="w-6 h-6 text-[#DC2626]" />
                   </div>
                   {index < processSteps.length - 1 && (
@@ -85,7 +85,7 @@ export default function ProcessPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#10243A]">
+      <section className="py-16 bg-black">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Get Started?

@@ -5,16 +5,16 @@ export function ContactCTA() {
   return (
     <section className="py-12 lg:py-16 bg-white">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-[#10243A]">
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-black">
           {/* Background image & gradient */}
           <div className="absolute inset-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400&q=80"
+              src="/images/pan-india-truck-load.jpg"
               alt="Highway background"
               className="w-full h-full object-cover object-center"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0d1d2e]/95 via-[#10243A]/85 to-[#10243A]/60" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/85 to-black/60" />
           </div>
 
           <div className="relative px-6 py-10 sm:px-10 sm:py-12 lg:p-14">

@@ -121,7 +121,7 @@ export default function IndustriesPage() {
                     unoptimized
                   />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#10243A]/90 via-[#10243A]/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-lg bg-[#DC2626] flex items-center justify-center">

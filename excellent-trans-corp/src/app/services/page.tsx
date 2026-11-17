@@ -43,7 +43,7 @@ export default function ServicesPage() {
             subtitle="We provide end-to-end logistics and transportation solutions tailored to meet your specific business requirements."
           />
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
             {services.map((service) => (
               <a
                 key={service.id}

@@ -64,28 +64,14 @@ export const navLinks = [
 
 export const services = [
   {
-    id: "ftl",
-    title: "Full Truck Load (FTL)",
-    shortDesc: "Dedicated vehicle transportation for large and bulk shipments.",
-    fullDesc:
-      "Our Full Truck Load service offers dedicated vehicle allocation for your large-volume shipments. Ideal for manufacturers and businesses that require exclusive use of the truck, ensuring faster transit times, minimised handling and complete control over your goods.",
-    icon: "Truck",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80",
-    benefits: [
-      "Dedicated vehicle — no sharing",
-      "Faster transit due to direct routing",
-      "Reduced handling and breakage risk",
-      "Real-time shipment coordination",
-    ],
-  },
-  {
     id: "ptl",
-    title: "Part Truck Load (PTL)",
-    shortDesc: "Cost-effective transportation for smaller consignments.",
+    title: "LTL (Less Than Truckload)",
+    shortDesc:
+      "Economical consolidated freight transport for partial truckloads. Pay only for the space you use with secure transit.",
     fullDesc:
-      "Part Truck Load allows businesses to ship smaller quantities without bearing the full cost of a dedicated truck. We consolidate multiple shipments going in the same direction, helping you save costs while ensuring your goods reach their destination safely.",
+      "Part Truck Load / LTL allows businesses to ship smaller quantities without bearing the full cost of a dedicated truck. We consolidate multiple shipments going in the same direction, helping you save costs while ensuring your goods reach their destination safely.",
     icon: "Package",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    image: "/images/ltl.jpg",
     benefits: [
       "Pay only for the space you use",
       "Ideal for smaller and medium businesses",
@@ -94,13 +80,30 @@ export const services = [
     ],
   },
   {
+    id: "ftl",
+    title: "FTL (Full Truck Load)",
+    shortDesc:
+      "Dedicated point-to-point transportation reserving the entire truck exclusively for your cargo. Direct dock-to-dock transit.",
+    fullDesc:
+      "Our Full Truck Load service offers dedicated vehicle allocation for your large-volume shipments. Ideal for manufacturers and businesses that require exclusive use of the truck, ensuring faster transit times, minimised handling and complete control over your goods.",
+    icon: "Truck",
+    image: "/images/ftl.jpg",
+    benefits: [
+      "Dedicated vehicle — no sharing",
+      "Faster transit due to direct routing",
+      "Reduced handling and breakage risk",
+      "Real-time shipment coordination",
+    ],
+  },
+  {
     id: "industrial",
-    title: "Industrial Transport",
-    shortDesc: "Reliable goods movement for manufacturing and industrial units.",
+    title: "Manufacturing & Industrial Transport",
+    shortDesc:
+      "Engineered road transport supporting factory production cycles, raw material supply, and plant machinery haulage.",
     fullDesc:
       "We specialise in transporting goods for manufacturing plants, industrial units and engineering companies. Our fleet is equipped to handle heavy industrial materials, machinery components, raw materials and finished goods with the care and precision these industries demand.",
     icon: "Factory",
-    image: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80",
+    image: "/images/industrial-transport.jpg",
     benefits: [
       "Suitable for heavy and oversized goods",
       "Experienced drivers familiar with industrial routes",
@@ -111,16 +114,49 @@ export const services = [
   {
     id: "pan-india",
     title: "Pan-India Transportation",
-    shortDesc: "Goods transportation across Maharashtra and all major locations in India.",
+    shortDesc:
+      "Expansive national road grid connecting Maharashtra to all major industrial corridors and commercial destinations across India.",
     fullDesc:
       "Our Pan-India transportation service connects Pune and Maharashtra to major industrial and commercial destinations across the country. Whether you need to move goods to metros or tier-2 cities, we ensure reliable delivery with proper documentation and transit support.",
     icon: "MapPin",
-    image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&q=80",
+    image: "/images/pan-india-truck-load.jpg",
     benefits: [
       "Wide network coverage across India",
       "Proper documentation and e-way bill support",
       "Dedicated route coordination",
       "Consistent service standards nationwide",
+    ],
+  },
+  {
+    id: "containerized",
+    title: "Containerized & Bulk Cargo",
+    shortDesc:
+      "All-weather sealed container trucks ensuring zero pilferage, moisture protection, and damage-free transit.",
+    fullDesc:
+      "Secure, weatherproof containerized fleet designed for sensitive commercial goods, auto components, high-value electronics, and FMCG consignments requiring enclosed transit.",
+    icon: "PackageCheck",
+    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80",
+    benefits: [
+      "Tamper-evident container sealing",
+      "All-weather water & dust protection",
+      "High security for valuable cargo",
+      "GPS monitored transit",
+    ],
+  },
+  {
+    id: "dedicated",
+    title: "Dedicated Contract Logistics",
+    shortDesc:
+      "Custom fleet allocations, dedicated driver crews, and scheduled logistics support for enterprise operations.",
+    fullDesc:
+      "Tailored contract logistics solutions for regular corporate shippers. Enjoy guaranteed vehicle availability, customized route planning, and dedicated account management for long-term supply chain needs.",
+    icon: "Clock",
+    image: "/images/contractLogistics.jpg",
+    benefits: [
+      "Guaranteed vehicle availability",
+      "Customized dispatch schedules",
+      "Priority routing & loading",
+      "Dedicated logistics manager",
     ],
   },
 ];
@@ -132,7 +168,7 @@ export const industries = [
     description:
       "Reliable transport for raw materials and finished products for manufacturing units across Pune and Maharashtra.",
     icon: "Factory",
-    image: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80",
+    image: "/images/industrial-transport.jpg",
     video: "/videos/manufacturing.mp4",
   },
   {
@@ -141,7 +177,7 @@ export const industries = [
     description:
       "Safe movement of engineering components, machinery parts and equipment with proper securing and handling.",
     icon: "Settings",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+    image: "/images/ftl.jpg",
     video: "/videos/engineering.mp4",
   },
   {
@@ -150,7 +186,7 @@ export const industries = [
     description:
       "Transportation of industrial supplies, tools, consumables and materials for plants and factories.",
     icon: "Package",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    image: "/images/ltl.jpg",
     video: "/videos/industryspully.mp4",
   },
   {
@@ -159,7 +195,7 @@ export const industries = [
     description:
       "Specialised transportation for steel coils, metal sheets, rods, beams and other heavy metallic goods.",
     icon: "Layers",
-    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&q=80",
+    image: "/images/pan-india-truck-load.jpg",
     video: "/videos/steel.mp4",
   },
   {
@@ -168,7 +204,7 @@ export const industries = [
     description:
       "Timely and careful transportation for FMCG products and consumer goods requiring scheduled deliveries.",
     icon: "ShoppingCart",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80",
+    image: "/images/contractLogistics.jpg",
     video: "/videos/fmcg.mp4",
     playbackRate: 2.5,
   },

@@ -12,7 +12,7 @@ export function Footer() {
   const currentYear = "2025";
 
   return (
-    <footer className="bg-[#10243A] text-white">
+    <footer className="bg-black text-white border-t border-white/10">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
@@ -51,7 +51,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-white text-base mb-4">Quick Links</h3>
+            <h3 className="font-bold text-[#DC2626] text-base mb-4">Quick Links</h3>
             <ul className="space-y-2.5">
               {navLinks
                 .filter((l) => !l.children)
@@ -80,7 +80,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-white text-base mb-4">Our Services</h3>
+            <h3 className="font-bold text-[#DC2626] text-base mb-4">Our Services</h3>
             <ul className="space-y-2.5">
               {services.map((service) => (
                 <li key={service.id}>
@@ -98,7 +98,7 @@ export function Footer() {
 
           {/* Contact CTA */}
           <div>
-            <h3 className="font-semibold text-white text-base mb-4">Get In Touch</h3>
+            <h3 className="font-bold text-[#DC2626] text-base mb-4">Get In Touch</h3>
             <p className="text-gray-300 text-sm mb-4 leading-relaxed">
               Have a transportation requirement? Contact us for a free quote.
             </p>

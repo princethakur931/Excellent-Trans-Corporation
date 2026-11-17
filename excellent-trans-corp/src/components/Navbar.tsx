@@ -44,13 +44,13 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white shadow-sm"
-      }`}
+        scrolled ? "bg-black/95 backdrop-blur-md shadow-xl" : "bg-black shadow-md"
+      } border-b border-white/10`}
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-[72px]">
           {/* Logo */}
-          <Logo />
+          <Logo light />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
@@ -63,7 +63,7 @@ export function Navbar() {
                       className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded transition-colors cursor-pointer ${
                         isActive(link.href)
                           ? "text-[#DC2626]"
-                          : "text-[#344054] hover:text-[#DC2626]"
+                          : "text-white hover:text-[#DC2626]"
                       }`}
                     >
                       {link.label}
@@ -74,12 +74,12 @@ export function Navbar() {
                       />
                     </button>
                     {servicesOpen && (
-                      <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-lg shadow-xl border border-gray-100 py-1 z-50">
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-[#111111] rounded-xl shadow-2xl border border-white/10 py-1.5 z-50 backdrop-blur-md">
                         {link.children.map((child) => (
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block px-4 py-2.5 text-sm text-[#344054] hover:text-[#DC2626] hover:bg-[#F4F6F8] transition-colors"
+                            className="block px-4 py-2.5 text-sm text-gray-200 hover:text-[#DC2626] hover:bg-white/5 transition-colors"
                           >
                             {child.label}
                           </Link>
@@ -96,7 +96,7 @@ export function Navbar() {
                   className={`px-3 py-2 text-sm font-medium rounded transition-colors ${
                     isActive(link.href)
                       ? "text-[#DC2626] border-b-2 border-[#DC2626]"
-                      : "text-[#344054] hover:text-[#DC2626]"
+                      : "text-white hover:text-[#DC2626]"
                   }`}
                 >
                   {link.label}
@@ -109,7 +109,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center">
             <a
               href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-              className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2.5 rounded-md text-sm font-semibold transition-colors duration-200"
+              className="flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition-colors duration-200"
             >
               <Phone className="w-4 h-4" />
               {siteConfig.phone}
@@ -118,7 +118,7 @@ export function Navbar() {
 
           {/* Mobile Hamburger */}
           <button
-            className="lg:hidden p-2 rounded-md text-[#344054] hover:text-[#DC2626] hover:bg-[#F4F6F8] transition-colors"
+            className="lg:hidden p-2 rounded-md text-white hover:text-[#DC2626] hover:bg-white/10 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
             aria-expanded={isOpen}
@@ -132,7 +132,7 @@ export function Navbar() {
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } bg-white border-t border-gray-100`}
+        } bg-[#111111] border-t border-white/10`}
       >
         <nav className="px-4 py-3 space-y-1">
           {navLinks.map((link) => {
@@ -143,8 +143,8 @@ export function Navbar() {
                     href={link.href}
                     className={`block px-3 py-2.5 text-sm font-medium rounded transition-colors ${
                       isActive(link.href)
-                        ? "text-[#DC2626] bg-red-50"
-                        : "text-[#344054] hover:text-[#DC2626] hover:bg-[#F4F6F8]"
+                        ? "text-[#DC2626] bg-white/5"
+                        : "text-white hover:text-[#DC2626] hover:bg-white/5"
                     }`}
                   >
                     {link.label}
@@ -154,7 +154,7 @@ export function Navbar() {
                       <Link
                         key={child.label}
                         href={child.href}
-                        className="block px-3 py-2 text-sm text-[#344054] hover:text-[#DC2626] hover:bg-[#F4F6F8] rounded transition-colors"
+                        className="block px-3 py-2 text-sm text-gray-300 hover:text-[#DC2626] hover:bg-white/5 rounded transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -169,8 +169,8 @@ export function Navbar() {
                 href={link.href}
                 className={`block px-3 py-2.5 text-sm font-medium rounded transition-colors ${
                   isActive(link.href)
-                    ? "text-[#DC2626] bg-red-50"
-                    : "text-[#344054] hover:text-[#DC2626] hover:bg-[#F4F6F8]"
+                    ? "text-[#DC2626] bg-white/5"
+                    : "text-white hover:text-[#DC2626] hover:bg-white/5"
                 }`}
               >
                 {link.label}
@@ -180,7 +180,7 @@ export function Navbar() {
           <div className="pt-2 pb-1">
             <a
               href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-              className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-md text-sm font-semibold transition-colors w-full"
+              className="flex items-center justify-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-4 py-3 rounded-lg text-sm font-semibold transition-colors w-full"
             >
               <Phone className="w-4 h-4" />
               Call Now: {siteConfig.phone}

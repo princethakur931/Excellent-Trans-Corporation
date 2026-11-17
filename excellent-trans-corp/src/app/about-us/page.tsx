@@ -61,7 +61,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80"
+                  src="/images/pan-india-truck-load.jpg"
                   alt="Excellent Trans Corporation fleet truck"
                   fill
                   className="object-cover"
@@ -141,7 +141,7 @@ export default function AboutPage() {
       </section>
 
       {/* Business Focus */}
-      <section className="py-16 lg:py-24 bg-[#10243A]">
+      <section className="py-16 lg:py-24 bg-black">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Focused on Industrial &amp; Manufacturing Transport

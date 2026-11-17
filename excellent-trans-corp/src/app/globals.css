@@ -3,9 +3,9 @@
 
 @theme inline {
   /* Brand Colors */
-  --color-navy: #10243A;
-  --color-navy-dark: #0b1a2b;
-  --color-navy-secondary: #163653;
+  --color-navy: #000000;
+  --color-navy-dark: #000000;
+  --color-navy-secondary: #111111;
   --color-red: #DC2626;
   --color-red-dark: #B91C1C;
   --color-orange: #DC2626;

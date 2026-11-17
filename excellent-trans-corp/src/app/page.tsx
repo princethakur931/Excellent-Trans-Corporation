@@ -69,7 +69,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#10243A]" aria-label="Hero">
+      <section className="relative min-h-screen flex flex-col overflow-hidden bg-black" aria-label="Hero">
         {/* Background Video with Refined Gradient Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* HTML5 Hero Background Video with Enhanced Brightness, Contrast & Saturation */}
@@ -142,7 +142,7 @@ export default function HomePage() {
         </div>
 
         {/* Feature Strip */}
-        <div className="relative bg-[#0b1a2b]/90 backdrop-blur-sm border-t border-white/10">
+        <div className="relative bg-black/90 backdrop-blur-sm border-t border-white/10">
           <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
               {heroFeatures.map(({ icon: Icon, label }) => (
@@ -162,14 +162,32 @@ export default function HomePage() {
       </section>
 
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
-      <section className="py-16 lg:py-24 bg-[#F4F6F8]" aria-labelledby="services-heading">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="OUR SERVICES"
-            title="Comprehensive Transportation Services"
-            subtitle="Flexible and dependable transport solutions to move your goods safely and efficiently."
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]" aria-labelledby="services-heading">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Eyebrow badge */}
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#D4AF37]/50 bg-[#F5EFE6] text-[#A27B3D] text-xs font-bold tracking-widest uppercase mb-4 shadow-sm">
+            OUR SERVICES
+          </div>
+
+          {/* Heading */}
+          <h2
+            id="services-heading"
+            className="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#10243A] tracking-wider uppercase mb-3"
+          >
+            TAILORED LOGISTICS SOLUTIONS
+          </h2>
+
+          {/* Golden accent bar */}
+          <div className="w-12 h-0.5 bg-[#C5A880] mx-auto mb-4" />
+
+          {/* Subtitle */}
+          <p className="text-[#556980] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-12 sm:mb-16">
+            From dedicated full truckloads to specialized industrial transport, we deliver secure,
+            reliable, and punctual road freight across India.
+          </p>
+
+          {/* 3-Column Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-8 text-left">
             {services.map((service) => (
               <ServiceCard key={service.id} {...service} />
             ))}
@@ -185,7 +203,7 @@ export default function HomePage() {
             <div className="relative pr-4 pb-4">
               <div className="relative rounded-2xl overflow-hidden aspect-[16/10] shadow-xl z-10">
                 <Image
-                  src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&q=80"
+                  src="/images/ftl.jpg"
                   alt="Cargo truck on highway - Excellent Trans Corporation"
                   fill
                   className="object-cover"
@@ -274,7 +292,7 @@ export default function HomePage() {
       </section>
 
       {/* ── WHY CHOOSE US ─────────────────────────────────────────────────── */}
-      <section className="py-12 lg:py-16 bg-[#10243A] text-white" aria-labelledby="why-heading">
+      <section className="py-12 lg:py-16 bg-black text-white" aria-labelledby="why-heading">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left */}
