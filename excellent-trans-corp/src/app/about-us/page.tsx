@@ -153,16 +153,16 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/services"
-              className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-7 py-3.5 rounded-lg text-sm font-bold transition-colors"
+              href="/get-a-quote"
+              className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-7 py-3.5 rounded-lg text-sm font-bold transition-all duration-200 hover:shadow-lg hover:shadow-red-500/30"
             >
-              Our Services <ArrowRight className="w-4 h-4" />
+              Book a Truck <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/get-a-quote"
+              href="/services"
               className="inline-flex items-center gap-2 border-2 border-white/40 hover:border-white text-white px-7 py-3.5 rounded-lg text-sm font-semibold transition-all hover:bg-white/10"
             >
-              Get a Quote
+              Our Services
             </Link>
           </div>
         </div>

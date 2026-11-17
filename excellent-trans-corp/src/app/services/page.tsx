@@ -114,9 +114,9 @@ export default function ServicesPage() {
 
                   <Link
                     href="/get-a-quote"
-                    className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-6 py-3 rounded-lg text-sm font-semibold transition-colors"
+                    className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-7 py-3.5 rounded-lg text-sm font-bold transition-all duration-200 hover:shadow-lg hover:shadow-red-500/30"
                   >
-                    Get a Quote <ArrowRight className="w-4 h-4" />
+                    Book a Truck <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>

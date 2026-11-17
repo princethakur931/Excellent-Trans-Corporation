@@ -72,7 +72,7 @@ export function Footer() {
                   className="flex items-center gap-1.5 text-gray-300 hover:text-[#DC2626] transition-colors text-sm group"
                 >
                   <ArrowRight className="w-3 h-3 text-[#DC2626] group-hover:translate-x-0.5 transition-transform" />
-                  Get a Quote
+                  Book a Truck
                 </Link>
               </li>
             </ul>
@@ -104,9 +104,9 @@ export function Footer() {
             </p>
             <Link
               href="/get-a-quote"
-              className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-5 py-2.5 rounded-md text-sm font-semibold transition-colors duration-200 mb-4"
+              className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-7 py-3.5 rounded-lg text-sm font-bold transition-all duration-200 hover:shadow-lg hover:shadow-red-500/30 mb-4"
             >
-              Get a Free Quote
+              Book a Truck <ArrowRight className="w-4 h-4" />
             </Link>
             <div className="mt-4">
               <a

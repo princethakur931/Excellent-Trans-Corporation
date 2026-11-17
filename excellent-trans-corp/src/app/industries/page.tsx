@@ -194,9 +194,9 @@ export default function IndustriesPage() {
 
                     <Link
                       href="/get-a-quote"
-                      className="inline-flex items-center gap-2 text-[#DC2626] font-semibold text-sm hover:gap-3 transition-all"
+                      className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white px-7 py-3.5 rounded-lg text-sm font-bold transition-all duration-200 hover:shadow-lg hover:shadow-red-500/30"
                     >
-                      Request a Quote <ArrowRight className="w-4 h-4" />
+                      Book a Truck <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>
