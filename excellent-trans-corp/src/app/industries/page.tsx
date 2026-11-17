@@ -97,45 +97,6 @@ export default function IndustriesPage() {
             subtitle="We support a wide range of industries with reliable and customised goods transportation."
           />
 
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {industries.map((industry) => (
-              <a
-                key={industry.id}
-                href={`#${industry.id}`}
-                className="group relative overflow-hidden rounded-2xl aspect-video shadow-md hover:shadow-xl transition-all duration-300"
-              >
-                {industry.video ? (
-                  <IndustryVideo
-                    src={industry.video}
-                    playbackRate={industry.playbackRate}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                ) : (
-                  <Image
-                    src={industry.image}
-                    alt={`${industry.title} transportation`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    unoptimized
-                  />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-lg bg-[#DC2626] flex items-center justify-center">
-                      <DynamicIcon name={industry.icon} className="w-4 h-4 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-white text-base">{industry.title}</h3>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-
           {/* Detailed Sections */}
           <div className="space-y-12">
             {industries.map((industry, index) => {
