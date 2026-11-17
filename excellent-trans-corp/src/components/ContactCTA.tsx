@@ -3,7 +3,7 @@ import { QuoteForm } from "./QuoteForm";
 
 export function ContactCTA() {
   return (
-    <section className="py-12 lg:py-16 bg-white">
+    <section className="py-12 lg:py-16 bg-[#FAF7F2]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-black">
           {/* Background image & gradient */}

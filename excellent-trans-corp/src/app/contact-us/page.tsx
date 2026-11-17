@@ -55,7 +55,7 @@ export default function ContactPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
       />
 
-      <section className="py-16 lg:py-24 bg-[#F4F6F8]">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Left: Contact Details */}
@@ -126,7 +126,7 @@ export default function ContactPage() {
 
           {/* Map Placeholder */}
           <div className="mt-10 bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
-            <div className="h-72 lg:h-96 flex items-center justify-center bg-[#F4F6F8] relative">
+            <div className="h-72 lg:h-96 flex items-center justify-center bg-[#FAF7F2] relative">
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-[#DC2626] mx-auto mb-3" />
                 <p className="font-semibold text-[#10243A] mb-1">

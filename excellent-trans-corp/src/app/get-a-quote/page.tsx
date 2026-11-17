@@ -21,7 +21,7 @@ export default function GetQuotePage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Book a Truck" }]}
       />
 
-      <section className="py-16 lg:py-24 bg-[#F4F6F8]">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-gray-100">
             <h2 className="text-2xl font-bold text-[#10243A] mb-1">

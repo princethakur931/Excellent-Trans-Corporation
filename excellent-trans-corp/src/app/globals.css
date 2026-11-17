@@ -10,7 +10,7 @@
   --color-red-dark: #B91C1C;
   --color-orange: #DC2626;
   --color-orange-dark: #B91C1C;
-  --color-light-bg: #F4F6F8;
+  --color-light-bg: #FAF7F2;
   --color-body-text: #344054;
   --color-border: #E5E7EB;
 
@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #FAF7F2;
   color: var(--color-body-text);
   font-family: var(--font-sans);
   line-height: 1.6;

@@ -55,7 +55,7 @@ export default function AboutPage() {
       />
 
       {/* Company Introduction */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="relative">
@@ -112,7 +112,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission, Vision, Approach */}
-      <section className="py-16 lg:py-24 bg-[#F4F6F8]">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-[#DC2626] font-semibold text-xs tracking-widest uppercase mb-2">

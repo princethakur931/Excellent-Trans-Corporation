@@ -34,7 +34,7 @@ export default function ProcessPage() {
       />
 
       {/* Timeline Overview */}
-      <section className="py-16 lg:py-24 bg-[#F4F6F8]">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-[#DC2626] font-semibold text-xs tracking-widest uppercase mb-2">
@@ -52,13 +52,13 @@ export default function ProcessPage() {
       </section>
 
       {/* Detailed Steps */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
             {processSteps.map((step, index) => (
               <div
                 key={step.step}
-                className="flex gap-6 items-start p-6 lg:p-8 bg-[#F4F6F8] rounded-2xl border border-gray-100 hover:border-[#DC2626]/20 hover:shadow-sm transition-all"
+                className="flex gap-6 items-start p-6 lg:p-8 bg-white rounded-2xl border border-gray-100 hover:border-[#DC2626]/20 hover:shadow-md transition-all"
               >
                 {/* Step number + icon */}
                 <div className="flex flex-col items-center gap-2 flex-shrink-0">

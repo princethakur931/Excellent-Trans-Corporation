@@ -89,7 +89,7 @@ export default function IndustriesPage() {
       />
 
       {/* Industry Overview Grid */}
-      <section className="py-16 lg:py-24 bg-[#F4F6F8]">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="SECTORS WE SERVE"

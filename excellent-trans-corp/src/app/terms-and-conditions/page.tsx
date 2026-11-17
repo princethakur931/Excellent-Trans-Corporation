@@ -19,7 +19,7 @@ export default function TermsPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]}
       />
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-[#FAF7F2]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-[#344054] space-y-8 leading-relaxed">
           <div>
             <h2 className="text-xl font-bold text-[#10243A] mb-3">1. Service Agreement</h2>
